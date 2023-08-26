@@ -35,21 +35,21 @@ module.exports = {
   //googleFontLinks - 用于引用 google 字体资源的链接数组。
   googleFontLinks: ['https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inter:wght@400;500;700&display=swap'],
 
-  // [OPTIONAL] The footer component of your website. You can write HTML here, but you need to escape double
-  // quotes - changing " to \". You can write anything here, and if you like badges, generate some with https://shields.io
+   // [可选] 您网站的页脚组件。 这里可以写HTML，但是需要转义double
+   // 引号 - 将 " 更改为 \"。 您可以在这里编写任何内容，如果您喜欢徽章，请使用 https://shields.io 生成一些徽章
   footer:
     'Powered by <a href="https://github.com/spencerwooo/onedrive-vercel-index" target="_blank" rel="noopener noreferrer">onedrive-vercel-index</a>. Made with ❤ by SpencerWoo.',
 
-  // [OPTIONAL] This is where you specify the folders that are password protected. It is an array of paths pointing to all
-  // the directories in which you have .password set. Check the documentation for details.
+   // [可选] 您可以在此处指定受密码保护的文件夹。 它是指向所有路径的数组
+   // 设置了 .password 的目录。 查看文档了解详细信息。
   protectedRoutes: ['/🌞 Private folder/u-need-a-password', '/🥟 Some test files/Protected route'],
 
-  // [OPTIONAL] Use "" here if you want to remove this email address from the nav bar.
+  // [可选] 如果您想从导航栏中删除此电子邮件地址，请在此处使用“”。
   email: 'mailto:spencer.wushangbo@gmail.com',
 
-  // [OPTIONAL] This is an array of names and links for setting your social information and links.
-  // In the latest update, all brand icons inside font awesome is supported and the icon to render is based on the name
-  // you provide. See the documentation for details.
+   // [可选] 这是一组名称和链接，用于设置您的社交信息和链接。
+   // 在最新的更新中，支持 font Awesome 内的所有品牌图标，并且根据名称渲染图标
+   // 你提供。 有关详细信息，请参阅文档。
   links: [
     {
       name: 'GitHub',
@@ -57,8 +57,8 @@ module.exports = {
     },
   ],
 
-  // This is a day.js-style datetime format string to format datetimes in the app. Ref to
-  // https://day.js.org/docs/en/display/format for detailed specification. The default value is ISO 8601 full datetime
-  // without timezone and replacing T with space.
+  // 这是一个 day.js 风格的日期时间格式字符串，用于在应用程序中格式化日期时间。 参考
+   // https://day.js.org/docs/en/display/format 了解详细规范。 默认值为 ISO 8601 完整日期时间
+   // 没有时区并用空格替换 T。
   datetimeFormat: 'YYYY-MM-DD HH:mm:ss',
 }
