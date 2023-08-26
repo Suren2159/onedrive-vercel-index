@@ -1,38 +1,38 @@
-/**
- * This file contains the configuration used for customising the website, such as the folder to share,
- * the title, used Google fonts, site icons, contact info, etc.
- */
+  /**
+  * 该文件包含用于自定义网站的配置，例如要共享的文件夹，
+  * 标题、使用的 Google 字体、网站图标、联系信息等。
+  */
 module.exports = {
-  // This is what we use to identify who you are when you are initialising the website for the first time.
-  // Make sure this is exactly the same as the email address you use to sign into your Microsoft account.
-  // You can also put this in your Vercel's environment variable 'NEXT_PUBLIC_USER_PRINCIPLE_NAME' if you worry about
-  // your email being exposed in public.
+   // 当您第一次初始化网站时，我们用它来识别您的身份。
+   // 确保这与您用于登录 Microsoft 帐户的电子邮件地址完全相同。
+   // 如果您担心，也可以将其放入 Vercel 的环境变量“NEXT_PUBLIC_USER_PRINCIPLE_NAME”中
+   // 你的电子邮件被公开暴露。
   userPrincipalName: process.env.NEXT_PUBLIC_USER_PRINCIPLE_NAME || 'spencer@spwoo.onmicrosoft.com',
 
-  // [OPTIONAL] This is the website icon to the left of the title inside the navigation bar. It should be placed under the
-  // /public directory of your GitHub project (not your OneDrive folder!), and referenced here by its relative path to /public.
+   // [可选] 这是导航栏中标题左侧的网站图标。 它应该放在
+   // GitHub 项目的 /public 目录（不是 OneDrive 文件夹！），并在此处通过其相对路径 /public 进行引用。
   icon: '/icons/128.png',
 
-  // Prefix for KV Storage
+  // KV存储的前缀
   kvPrefix: process.env.KV_PREFIX || '',
 
-  // The name of your website. Present alongside your icon.
+  // 您网站的名称。 与您的图标一起展示。
   title: "Spencer's OneDrive",
 
-  // The folder that you are to share publicly with onedrive-vercel-index. Use '/' if you want to share your root folder.
+  // 您要与 onedrive-vercel-index 公开共享的文件夹。 如果您想共享根文件夹，请使用“/”。
   baseDirectory: '/Public',
 
-  // [OPTIONAL] This represents the maximum number of items that one directory lists, pagination supported.
-  // Do note that this is limited up to 200 items by the upstream OneDrive API.
+   // [可选] 这表示一个目录列出的最大项目数，支持分页。
+   // 请注意，上游 OneDrive API 限制最多 200 个项目。
   maxItems: 100,
 
-  // [OPTIONAL] We use Google Fonts natively for font customisations.
-  // You can check and generate the required links and names at https://fonts.google.com.
-  // googleFontSans - the sans serif font used in onedrive-vercel-index.
+   // [可选] 我们本身使用 Google Fonts 进行字体定制。
+   // 您可以在 https://fonts.google.com 检查并生成所需的链接和名称。
+   // googleFontSans - onedrive-vercel-index 中使用的无衬线字体。
   googleFontSans: 'Inter',
-  // googleFontMono - the monospace font used in onedrive-vercel-index.
+  //googleFontMono - onedrive-vercel-index 中使用的等宽字体。
   googleFontMono: 'Fira Mono',
-  // googleFontLinks -  an array of links for referencing the google font assets.
+  //googleFontLinks - 用于引用 google 字体资源的链接数组。
   googleFontLinks: ['https://fonts.googleapis.com/css2?family=Fira+Mono&family=Inter:wght@400;500;700&display=swap'],
 
   // [OPTIONAL] The footer component of your website. You can write HTML here, but you need to escape double
